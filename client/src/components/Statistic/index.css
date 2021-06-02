@@ -1,12 +1,16 @@
 .statistic {
     width: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
 }
 
 .statistic__table {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    padding: 1rem;
-    box-sizing: border-box;
+    max-width: 55rem;
+    border: 1px solid gray;
+    margin: 1rem auto;
+    border-bottom: none;
 }
 
 .statistic__label {
@@ -32,6 +36,7 @@
     padding-bottom: 0.5rem;
     width: 100%;
     border-bottom: 1px solid grey;
+    text-align: center;
 }
 
 .statistic__wrapper > .statistic__text {
@@ -44,6 +49,13 @@
     display: flex;
     align-items: center;
     border-bottom: 1px solid grey;
+    width: 100%;
+    justify-content: center;
+}
+
+.statistic__form {
+    display: flex;
+    align-items: center;
     width: 100%;
     justify-content: center;
 }
@@ -63,4 +75,18 @@
 
 .statistic__arrowDown {
     transform: rotate(180deg);
+}
+
+@media (max-width: 600px) {
+    .statistic__text {
+        font-size: 0.5rem;
+    }
+
+    .statistic__label {
+        margin-right: 0.5rem;
+    }
+
+    .statistic {
+        padding: 0.5rem;
+    }
 }

@@ -60,8 +60,7 @@ const Statistic = ({ tickers, applyTickers }) => {
 
   return (
     <article className="statistic">
-      <form className="statistic__wrapper">
-
+      <form className="statistic__form">
         {
           displayBrands.map(result => (
             <label key={result.name} htmlFor={result.name} className="statistic__label">
