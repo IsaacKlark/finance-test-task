@@ -1,0 +1,66 @@
+.statistic {
+    width: 100%;
+}
+
+.statistic__table {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.statistic__label {
+    margin-right: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.statistic__label:hover {
+    cursor: pointer;
+}
+
+.statistic__label p {
+    border-bottom: none;
+    padding-bottom: 0.7rem;
+}
+
+.statistic__text {
+    font-size: 1rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    width: 100%;
+    border-bottom: 1px solid grey;
+}
+
+.statistic__wrapper > .statistic__text {
+    border-bottom: none;
+    width: max-content;
+    margin-left: 1rem;
+}
+
+.statistic__wrapper {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid grey;
+    width: 100%;
+    justify-content: center;
+}
+
+.statistic__headerText {
+    color: #ff5722;
+}
+
+.statistic__name {
+    color: #0060ad;
+}
+
+.statistic__arrow {
+    height: 1rem;
+    margin-left: 1rem;
+}
+
+.statistic__arrowDown {
+    transform: rotate(180deg);
+}
